@@ -13,7 +13,7 @@ const ErrorNotFound = () => {
       <Fragment>
         <div>
           <p>404 Error! Page not found</p>
-          <Link to="/signup">Go Home</Link>
+          <Link to="/">Go Home</Link>
         </div>
       </Fragment>
     );
