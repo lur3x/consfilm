@@ -9,7 +9,7 @@ export default function SearchPage() {
   const { loading, shows } = showsContext;
   console.log(showsContext);
   return (
-    <div className="bg-light text-dark search__page">
+    <div className="text-light search__page">
       <Search />
       {loading ? (
         <h2>Loading...</h2>

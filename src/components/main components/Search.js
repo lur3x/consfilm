@@ -19,8 +19,8 @@ export default function Search() {
   };
   return (
     <div>
-      <div className="searchDiv bg-light mb-5">
-        <h1 className="text-center mb-5">Type to search</h1>
+      <div className="mb-5">
+        <h1 className="text-center mb-5 search__title">TYPE TO SEARCH</h1>
         {alert ? <Alert message={alert.message} type={alert.type} /> : null}
         <Form>
           <Form.Control
@@ -31,7 +31,7 @@ export default function Search() {
             onChange={(e) => setSearchTerm(e.target.value)}
           ></Form.Control>
           <Button
-            className="btn btn-dark searchBtn mt-3"
+            className="btn btn-dark search-btn mt-3"
             onClick={onSearchHandler}
           >
             SEARCH

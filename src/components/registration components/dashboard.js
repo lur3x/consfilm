@@ -29,11 +29,11 @@ const Dashboard = () => {
     return (
       <>
         <Container
-          style={{ minHeight: '100vh' }}
+          style={{ minHeight: '93vh' }}
           className="d-flex align-items-center justify-content-center"
         >
           <div style={{ maxWidth: '400px' }} className="w-100">
-            <Card className="cardClass text-light">
+            <Card className="card-class text-light">
               <Card.Body>
                 <h2 className="text-center mb-4">Profile</h2>
                 {error && <Alert variant="danger">{error}</Alert>}

@@ -44,11 +44,11 @@ const SignUp = () => {
     return (
       <>
         <Container
-          style={{ minHeight: '100vh' }}
+          style={{ minHeight: '93vh' }}
           className="d-flex align-items-center justify-content-center"
         >
           <div style={{ maxWidth: '400px' }} className="w-100">
-            <Card className="text-light border-dark cardClass">
+            <Card className="card-class text-light">
               <Card.Body>
                 <h2 className="text-center mb-4">Sign Up</h2>
                 {error && <Alert variant="danger">{error}</Alert>}
@@ -56,7 +56,7 @@ const SignUp = () => {
                   <Form.Group id="email">
                     <Form.Label>Email</Form.Label>
                     <Form.Control
-                      className="bg-dark text-light"
+                      className="text-light"
                       type="email"
                       placeholder="Enter Email"
                       ref={emailRef}
@@ -66,7 +66,7 @@ const SignUp = () => {
                   <Form.Group id="password">
                     <Form.Label>Password</Form.Label>
                     <Form.Control
-                      className="bg-dark text-light"
+                      className=" text-light"
                       type="password"
                       placeholder="Enter Password"
                       ref={passwordRef}
@@ -76,7 +76,7 @@ const SignUp = () => {
                   <Form.Group id="passwordConfirm">
                     <Form.Label>Password Confirmation</Form.Label>
                     <Form.Control
-                      className="bg-dark text-light"
+                      className=" text-light"
                       type="password"
                       ref={passwordConfirmRef}
                       placeholder="Confirm Password"

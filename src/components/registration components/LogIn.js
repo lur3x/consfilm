@@ -37,11 +37,11 @@ const Login = () => {
     return (
       <>
         <Container
-          style={{ minHeight: '100vh' }}
+          style={{ minHeight: '93vh' }}
           className="d-flex align-items-center justify-content-center"
         >
           <div style={{ maxWidth: '400px' }} className="w-100">
-            <Card className="bg-dark text-light cardClass">
+            <Card className="card-class text-light">
               <Card.Body>
                 <h2 className="text-center mb-4">Log In</h2>
                 {error && <Alert variant="danger">{error}</Alert>}
@@ -50,7 +50,6 @@ const Login = () => {
                     <Form.Label>Email</Form.Label>
                     <Form.Control
                       placeholder="Enter Email"
-                      className="bg-dark text-light"
                       type="email"
                       ref={emailRef}
                       required
@@ -60,7 +59,6 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control
                       placeholder="Enter Password"
-                      className="bg-dark text-light"
                       type="password"
                       ref={passwordRef}
                       required

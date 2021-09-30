@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function NavBar() {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
         <Container>
           <Navbar.Brand as={Link} to="/">
             ConsFilm

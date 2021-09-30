@@ -1,8 +1,8 @@
 const About = () => {
   return (
-    <div className="about text-dark bg-light">
-      <h3 className="about__title">ABOUT PAGE</h3>
-      <div className="about__info">
+    <div className="about text-darkr">
+      <h1 className="about__title bg-light">ABOUT PAGE</h1>
+      <div className="about__info bg-light">
         <p>
           <strong>ConsFilm</strong> (Netflix Clone)
         </p>
