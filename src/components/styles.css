@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #f1f2f6;
+  --rating-color: #63cdda;
+  --genre-color: #1dd1a1;
+}
 body{
   font-family: 'Heebo', sans-serif;
-  background-color: #fff;
+  background-color: var(--white);
   background-image: url(../assets/images/bg.jpg) !important;
   background-size: cover;
 }
@@ -13,38 +20,32 @@ body{
 }
 .form-control:focus {
     opacity: 1;
-    border-color: #fff;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 8px #fff;
+    border-color: var(--white);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 8px var(--white);
 }
 .searchbar{
   opacity: 0.5;
-  outline: solid #000;
+  outline: solid var(--black);
   padding: 2rem 0;
 
 }
 .searchbar:focus{
   opacity: 1;
-  outline: solid #000;
+  outline: solid var(--black);
 }
 .search-btn{
   width: 100%;
-  font-size: 2rem; 
-  outline: solid #000;
+  font-size: 2rem;
+  outline: solid var(--black);
 }
 .card-class{
   background-color: rgba(0, 0, 0, 0.5) !important;
-}
-.header{
-  border-bottom: 4px solid #3DAA0A;
 }
 
 .container{
   max-width: 100% !important;
   margin:0 !important;
   padding: 0 !important;
-}
-.text-green{
-  color: #3DAA0A;
 }
 .bottomText{
   background-color: rgba(0,0,0,0.5);
@@ -62,12 +63,12 @@ body{
 .search__page{
   height: 93vh;
   padding: 2% 10% 51vh;
-  box-shadow: 3px 3px #000, -3px 3px 3px #000;
+  box-shadow: 3px 3px var(--black), -3px 3px 3px var(--black);
 }
 .list-item{
   text-decoration: none;
   width: 90%;
-  background-color: #f1f2f6;
+  background-color: var(--grey);
   box-shadow: 5px 5px 5px 5px rgba(89, 98, 117, 0.1);
   margin: 2rem auto;
   cursor: pointer;
@@ -88,7 +89,7 @@ body{
   padding: 2vh;
 }
 .info__rating{
-  color: #63cdda;
+  color: var(--rating-color);
 }
 .list-item__div{
   display: grid;
@@ -113,14 +114,14 @@ body{
   border-radius: 1rem;
   margin: 0.5rem 1rem 0.5rem 0;
   padding: 1rem ;
-  background-color: #1dd1a1;
+  background-color: var(--genre-color);
 }
 
 .single-show__info > p > strong{
   border-radius: 0.5rem;
   margin: 0.5rem 1rem 0.5rem 0;
   padding: 0.3rem ;
-  background-color: #1dd1a1;
+  background-color: var(--genre-color);
 
 }
 
@@ -128,13 +129,13 @@ body{
   margin: 2rem auto;
 }
 a:hover{
-  color:#fff;
+  color:var(--white);
 }
 .home-link{
-  background-color: #000;
+  background-color: var(--black);
   padding: 0.5rem 5rem;
   width: 20%;
-  color:#fff;
+  color:var(--white);
 }
 .about {
   width: 100%;
@@ -170,7 +171,7 @@ a:hover{
   padding: 0.5rem;
 }
 .about-a:hover{
-  color: #000;
+  color: var(--black);
 }
 * {
   -webkit-box-sizing: border-box;
@@ -178,7 +179,7 @@ a:hover{
 }
 
 .error404{
-  background-color: white;
+  background-color: var(--white);
   margin: 5rem auto;
   width: 50%;
   font-size: 1.2rem;
@@ -222,14 +223,14 @@ a:hover{
   font-size: 252px;
   font-weight: 900;
   margin: 0px;
-  color: #262626;
+  color: var(--black);
   text-transform: uppercase;
   letter-spacing: -40px;
   margin-left: -20px;
 }
 
 .notfound .notfound-404 h1>span {
-  text-shadow: -8px 0px 0px #fff;
+  text-shadow: -8px 0px 0px var(--white);
 }
 
 .notfound .notfound-404 h3 {
@@ -238,7 +239,7 @@ a:hover{
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #262626;
+  color: var(--black);
   margin: 0px;
   letter-spacing: 3px;
   padding-left: 6px;
@@ -249,7 +250,7 @@ a:hover{
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #000;
+  color: var(--black);
   margin-top: 0px;
   margin-bottom: 25px;
 }
@@ -282,21 +283,21 @@ a:hover{
   margin: 1rem auto;
   padding: 1.5rem;
   border-radius: 2rem;
-  box-shadow: 3px 3px #000, -3px 3px 3px #000;
+  box-shadow: 3px 3px var(--black), -3px 3px 3px var(--black);
 }
 .homepage__title,.search__title{
-  -webkit-text-stroke: 2px #000;
+  -webkit-text-stroke: 2px var(--black);
   font-size: 8rem;
   font-weight: bold;
 }
 .homepage__content > p{
   font-size: 4rem;
-  -webkit-text-stroke: 0.1rem #000;
+  -webkit-text-stroke: 0.1rem var(--black);
 }
 .login-link,.search-link{
-  background-color: #000;
+  background-color: var(--black);
   padding: 0.5rem 5rem;
   font-size: 2rem;
-  color:#fff;
+  color:var(--white);
   margin-right: 5rem;
 }
