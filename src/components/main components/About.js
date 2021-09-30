@@ -8,7 +8,13 @@ const About = () => {
         </p>
         <p>
           Created as EPAM Lab Project by{' '}
-          <a href="https://github.com/lur3x">Denys Materna</a>
+          <a
+            href="https://github.com/lur3x"
+            className="about-a"
+            target="_blank"
+          >
+            Denys Materna
+          </a>
         </p>
         <div>
           <p>Things used for app build:</p>
@@ -21,13 +27,18 @@ const About = () => {
               <a
                 href="https://firebase.google.com/?authuser=0"
                 className="about-a"
+                target="_blank"
               >
                 (https://firebase.google.com/?authuser=0)
               </a>
             </li>
             <li>
               TVMAZE API{' '}
-              <a href="https://www.tvmaze.com/api" className="about-a">
+              <a
+                href="https://www.tvmaze.com/api"
+                target="_blank"
+                className="about-a"
+              >
                 (https://www.tvmaze.com/api)
               </a>
             </li>
