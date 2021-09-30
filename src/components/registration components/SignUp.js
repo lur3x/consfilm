@@ -56,7 +56,7 @@ const SignUp = () => {
                   <Form.Group id="email">
                     <Form.Label>Email</Form.Label>
                     <Form.Control
-                      className="bg-dark"
+                      className="bg-dark text-light"
                       type="email"
                       placeholder="Enter Email"
                       ref={emailRef}
@@ -66,7 +66,7 @@ const SignUp = () => {
                   <Form.Group id="password">
                     <Form.Label>Password</Form.Label>
                     <Form.Control
-                      className="bg-dark"
+                      className="bg-dark text-light"
                       type="password"
                       placeholder="Enter Password"
                       ref={passwordRef}
@@ -76,7 +76,7 @@ const SignUp = () => {
                   <Form.Group id="passwordConfirm">
                     <Form.Label>Password Confirmation</Form.Label>
                     <Form.Control
-                      className="bg-dark"
+                      className="bg-dark text-light"
                       type="password"
                       ref={passwordConfirmRef}
                       placeholder="Confirm Password"

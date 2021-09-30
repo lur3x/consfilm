@@ -1,5 +1,6 @@
-import React, { Fragment, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { Fragment, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import '../styles.css';
 
 const ErrorNotFound = () => {
   const [loaded, setLoaded] = useState(false);
@@ -11,9 +12,10 @@ const ErrorNotFound = () => {
   if (loaded) {
     return (
       <Fragment>
-        <div>
+        <div className="error404 bg-light">
+          <h2 className="text-danger">OOPS!..</h2>
           <p>404 Error! Page not found</p>
-          <Link to="/">Go Home</Link>
+          <Link to="/" className="home-link">Go Home</Link>
         </div>
       </Fragment>
     );

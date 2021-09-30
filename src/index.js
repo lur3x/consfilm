@@ -7,13 +7,19 @@ import './assets/fonts/Lora-Regular.ttf';
 import App from './Layout/AppMain';
 import reportWebVitals from './reportWebVitals';
 import NavBar from './components/main components/Navbar';
+import ShowsState from './components/contexts/shows/showsState';
+import AlertsState from './components/contexts/alerts/AlertsState';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <NavBar />
-      <App />
-    </BrowserRouter>
+    <ShowsState>
+      <AlertsState>
+        <BrowserRouter>
+          <NavBar />
+          <App />
+        </BrowserRouter>
+      </AlertsState>
+    </ShowsState>
   </React.StrictMode>,
   document.getElementById('root')
 );

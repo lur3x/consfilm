@@ -50,7 +50,7 @@ const Login = () => {
                     <Form.Label>Email</Form.Label>
                     <Form.Control
                       placeholder="Enter Email"
-                      className="bg-dark"
+                      className="bg-dark text-light"
                       type="email"
                       ref={emailRef}
                       required
@@ -60,7 +60,7 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control
                       placeholder="Enter Password"
-                      className="bg-dark"
+                      className="bg-dark text-light"
                       type="password"
                       ref={passwordRef}
                       required

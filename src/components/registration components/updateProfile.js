@@ -67,7 +67,7 @@ const UpdateProfile = () => {
                   <Form.Group id="email">
                     <Form.Label>Email</Form.Label>
                     <Form.Control
-                      className="bg-dark"
+                      className="bg-dark text-light"
                       type="email"
                       ref={emailRef}
                       required
@@ -77,7 +77,7 @@ const UpdateProfile = () => {
                   <Form.Group id="password">
                     <Form.Label>Password</Form.Label>
                     <Form.Control
-                      className="bg-dark"
+                      className="bg-dark text-light"
                       type="password"
                       ref={passwordRef}
                       placeholder="Leave blank to keep the same"
@@ -86,7 +86,7 @@ const UpdateProfile = () => {
                   <Form.Group id="passwordConfirm">
                     <Form.Label>Password Confirmation</Form.Label>
                     <Form.Control
-                      className="bg-dark"
+                      className="bg-dark text-light"
                       type="password"
                       ref={passwordConfirmRef}
                       placeholder="Leave blank to keep the same"
