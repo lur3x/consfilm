@@ -1,2 +1,1 @@
-# auth-demo
-firbase authentication
+#

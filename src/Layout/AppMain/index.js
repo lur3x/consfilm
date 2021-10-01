@@ -37,6 +37,7 @@ function App() {
               <PrivateRoute path="/dashboard" component={Dashboard} />
               <Route path="/login" component={Login} />
               <Route exact path="/" component={Main} />
+              <Route exact path="/posts" component={Main} />
               <Route exact path="/about" component={Main} />
               <Route path="/singleshow/:id" component={Main} />
               <Route path="/search" component={Main} />

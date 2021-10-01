@@ -44,7 +44,6 @@ const About = () => {
             </li>
             <li>React Router</li>
             <li>React Context API</li>
-            <li>Deployed to Netlify</li>
             <li>Deployed to Firebase</li>
           </ul>
         </div>

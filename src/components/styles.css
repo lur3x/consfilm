@@ -86,7 +86,7 @@ body{
 }
 .info__name{
   font-size: 1rem;
-  padding: 2vh;
+  padding: 1vh;
 }
 .info__rating{
   color: var(--rating-color);
@@ -300,4 +300,62 @@ a:hover{
   font-size: 2rem;
   color:var(--white);
   margin-right: 5rem;
+}
+.post{
+  width: 50%;
+  height: fit-content;
+  padding: 2vh;
+  border-radius: 2rem;
+  margin: 1rem auto 2rem;
+}
+.post__title{
+  color: var(--black);
+  font-size: 2rem;
+}
+.post__content{
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+.post__creator{
+  background-color: var(--genre-color);
+  border-radius: 2rem;
+  width: fit-content;
+  padding: 0 1rem;
+  margin: 1rem auto;
+}
+.post__btn{
+  background-color: var(--genre-color);
+  color: var(--white);
+  margin: 1rem;
+  border-color: var(--genre-color);
+}
+.post__btn:hover{
+  background-color: var(--rating-color);
+  color: var(--black);
+  border-color: var(--rating-color);
+}
+.post__btn:checked{
+  background-color: var(--rating-color);
+  color: var(--black);
+  border-color: var(--rating-color);
+  box-shadow: var(--rating-color);
+}
+.post__form{
+  width: fit-content;
+  height: 25rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.post__form--input, .post__form--textarea{
+  width: 20rem;
+  border: 0.1rem solid var(--black)
+}
+.post__form--input:focus, .post__form--textarea:focus{
+  width: 20rem;
+  border: 0.1rem solid var(--black)
+}
+.post__form--btn{
+  margin-top: 2rem;
+  margin-left: 15rem;
 }

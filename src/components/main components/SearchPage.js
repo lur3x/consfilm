@@ -7,7 +7,6 @@ import ListItem from './ListItem';
 export default function SearchPage() {
   const showsContext = useContext(ShowsContext);
   const { loading, shows } = showsContext;
-  console.log(showsContext);
   return (
     <div className="text-light search__page">
       <Search />

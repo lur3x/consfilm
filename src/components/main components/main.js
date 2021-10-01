@@ -4,6 +4,8 @@ import About from './About';
 import SinglePage from './SinglePage';
 import SearchPage from './SearchPage';
 import HomePage from './HomePage';
+import Posts from './Posts';
+import PostForm from './PostForm';
 
 export default function Main() {
   return (
@@ -11,6 +13,8 @@ export default function Main() {
       <div className="container"></div>
       <Switch>
         <Route path="/search" component={SearchPage} />
+        <Route path="/postform" component={PostForm} />
+        <Route path="/posts" component={Posts} />
         <Route exact path="/" component={HomePage} />
         <Route exact path="/about" component={About} />
         <Route path="/singleshow/:id" component={SinglePage} />
