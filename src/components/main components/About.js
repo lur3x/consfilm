@@ -44,7 +44,16 @@ const About = () => {
             </li>
             <li>React Router</li>
             <li>React Context API</li>
-            <li>Deployed to Firebase</li>
+            <li>
+              Deployed to Firebase{' '}
+              <a
+                href="https://consfilm.web.app"
+                target="_blank"
+                className="about-a"
+              >
+                (https://consfilm.web.app)
+              </a>
+            </li>
           </ul>
         </div>
       </div>
