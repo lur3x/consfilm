@@ -359,3 +359,17 @@ a:hover{
   margin-top: 2rem;
   margin-left: 15rem;
 }
+.single-show__summary{
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.single-show__title{
+  -webkit-text-stroke: 0.1rem var(--black);
+  font-size: 4rem;
+  font-weight: bold;
+}
+.single-show__info > p{
+
+padding: 1rem;
+}
