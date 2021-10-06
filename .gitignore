@@ -20,7 +20,7 @@
 /.firebase
 .firebaserc
 firebase.json
-
+.gitignore
 
 
 npm-debug.log*
