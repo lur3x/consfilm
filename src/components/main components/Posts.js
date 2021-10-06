@@ -1,9 +1,8 @@
-import React, { useState, useContext, useRef } from 'react';
+import React, { useState } from 'react';
 import PostItem from './PostItem';
 import { useAuth } from '../contexts/AuthContext';
-import ShowsContext from '../contexts/shows/ShowsContext';
+
 import { Button, Form } from 'react-bootstrap';
-import PostForm from './PostForm.js';
 
 export default function Posts() {
   const { currentUser } = useAuth();
@@ -16,41 +15,64 @@ export default function Posts() {
     setShowForm(false);
   };
   const [posts, setPosts] = useState([]);
-  const showNameRef = useRef();
-  const showContentRef = useRef();
-  console.log(posts);
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
+
+  const addNewPost = () => {
+    const newPost = {
+      id: Date.now(),
+      title,
+      content,
+      sign: (currentUser ? currentUser.email : 'Anonymous'),
+    };
+    setPosts([...posts, newPost]);
+    setTitle('');
+    setContent('');
+  };
+
   return (
     <div>
       {showForm ? (
         <div>
-          <Button className="btn-success post__btn" onClick={removeForm}>
+          <Button className='btn-success post__btn' onClick={removeForm}>
             Return
           </Button>
           <div>
-            <Form className="post__form bg-light">
+            <Form className='post__form bg-light'>
               <Form.Label>Enter Show Name</Form.Label>
               <Form.Control
-                className="post__form--input text-dark"
-                ref={showNameRef}
+                className='post__form--input text-dark'
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
               ></Form.Control>
               <Form.Label>Enter Your Impressions</Form.Label>
               <Form.Control
-                as="textarea"
-                className="post__form--textarea text-dark"
+                value={content}
+                onChange={(e) => setContent(e.target.value)}
+                as='textarea'
+                className='post__form--textarea text-dark'
                 style={{ height: '10rem' }}
-                ref={showContentRef}
               ></Form.Control>
-              <Button className="btn post__form--btn">Submit</Button>
+              <Button
+                className='btn post__form--btn'
+                onClick={(e) => {
+                  e.preventDefault();
+                  addNewPost();
+                  removeForm();
+                }}
+              >
+                Submit
+              </Button>
             </Form>
           </div>
         </div>
       ) : (
         <div>
-          <Button className="btn-success post__btn" onClick={handleForm}>
+          <Button className='btn-success post__btn' onClick={handleForm}>
             + CreatePost
           </Button>
-          {posts.map((post) => (
-            <PostItem post={post} />
+          {posts.map((posts) => (
+            <PostItem posts={posts} />
           ))}
         </div>
       )}

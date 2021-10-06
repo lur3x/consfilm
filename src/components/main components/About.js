@@ -1,17 +1,17 @@
 const About = () => {
   return (
-    <div className="about text-darkr">
-      <h1 className="about__title bg-light">ABOUT PAGE</h1>
-      <div className="about__info bg-light">
+    <div className='about text-dark'>
+      <h1 className='about__title bg-light'>ABOUT PAGE</h1>
+      <div className='about__info bg-light'>
         <p>
           <strong>ConsFilm</strong> (Netflix Clone)
         </p>
         <p>
           Created as EPAM Lab Project by{' '}
           <a
-            href="https://github.com/lur3x"
-            className="about-a"
-            target="_blank"
+            href='https://github.com/lur3x'
+            className='about-a'
+            target='_blank'
           >
             Denys Materna
           </a>
@@ -25,9 +25,9 @@ const About = () => {
             <li>
               Firebase API{' '}
               <a
-                href="https://firebase.google.com/?authuser=0"
-                className="about-a"
-                target="_blank"
+                href='https://firebase.google.com/?authuser=0'
+                className='about-a'
+                target='_blank'
               >
                 (https://firebase.google.com/?authuser=0)
               </a>
@@ -35,9 +35,9 @@ const About = () => {
             <li>
               TVMAZE API{' '}
               <a
-                href="https://www.tvmaze.com/api"
-                target="_blank"
-                className="about-a"
+                href='https://www.tvmaze.com/api'
+                target='_blank'
+                className='about-a'
               >
                 (https://www.tvmaze.com/api)
               </a>
@@ -47,9 +47,9 @@ const About = () => {
             <li>
               Deployed to Firebase{' '}
               <a
-                href="https://consfilm.web.app"
-                target="_blank"
-                className="about-a"
+                href='https://consfilm.web.app'
+                target='_blank'
+                className='about-a'
               >
                 (https://consfilm.web.app)
               </a>
