@@ -23,7 +23,7 @@ export default function Posts() {
       id: Date.now(),
       title,
       content,
-      sign: (currentUser ? currentUser.email : 'Anonymous'),
+      sign: (currentUser ? currentUser.email : 'Guest'),
     };
     setPosts([...posts, newPost]);
     setTitle('');
