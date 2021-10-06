@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PostItem from './PostItem';
 import { useAuth } from '../contexts/AuthContext';
 
-import { Button, Form } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 
 export default function Posts() {
   const { currentUser } = useAuth();
@@ -23,7 +23,7 @@ export default function Posts() {
       id: Date.now(),
       title,
       content,
-      sign: (currentUser ? currentUser.email : 'Guest'),
+      sign: currentUser ? currentUser.email : 'Guest',
     };
     setPosts([...posts, newPost]);
     setTitle('');
@@ -34,9 +34,9 @@ export default function Posts() {
     <div>
       {showForm ? (
         <div>
-          <Button className='btn-success post__btn' onClick={removeForm}>
+          <button className='post__btn' onClick={removeForm}>
             Return
-          </Button>
+          </button>
           <div>
             <Form className='post__form bg-light'>
               <Form.Label>Enter Show Name</Form.Label>
@@ -53,7 +53,7 @@ export default function Posts() {
                 className='post__form--textarea text-dark'
                 style={{ height: '10rem' }}
               ></Form.Control>
-              <Button
+              <button
                 className='btn post__form--btn'
                 onClick={(e) => {
                   e.preventDefault();
@@ -62,15 +62,15 @@ export default function Posts() {
                 }}
               >
                 Submit
-              </Button>
+              </button>
             </Form>
           </div>
         </div>
       ) : (
         <div>
-          <Button className='btn-success post__btn' onClick={handleForm}>
+          <button className='post__btn' onClick={handleForm}>
             + CreatePost
-          </Button>
+          </button>
           {posts.map((posts) => (
             <PostItem posts={posts} />
           ))}
